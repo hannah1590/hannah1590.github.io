@@ -1,4 +1,5 @@
 // Wait until the DOM is fully loaded
+/*
 document.addEventListener("DOMContentLoaded", function() {
     // Get all the "Show More" buttons
     const showMoreButtons = document.querySelectorAll('.show-more-btn');
@@ -19,4 +20,8 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         });
     });
+}); */
+
+document.addEventListener("DOMContentLoaded", function () {
+    console.log("Portfolio site loaded!");
 });

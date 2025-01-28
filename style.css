@@ -1,4 +1,4 @@
-/* Global styles */
+/* Global styles 
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -42,9 +42,9 @@ header nav ul li a:hover {
 
 h2 {
     color: #2d3e50;
-}
+}*/
 
-/* Project section */
+/* Project section 
 .project-card {
     background-color: white;
     padding: 20px;
@@ -61,18 +61,18 @@ h2 {
 
 .project-card a:hover {
     text-decoration: underline;
-}
+}*/
 
-/* Footer */
+/* Footer 
 footer {
     background-color: #2d3e50;
     color: white;
     text-align: center;
     padding: 10px 0;
     margin-top: 40px;
-}
+}*/
 
-/* Media queries for responsiveness */
+/* Media queries for responsiveness
 @media (max-width: 768px) {
     header nav ul {
         display: block;
@@ -82,9 +82,9 @@ footer {
     header nav ul li {
         margin-bottom: 10px;
     }
-}
+} */
 
-/* Contact form styles */
+/* Contact form styles 
 form {
     background-color: #fff;
     padding: 20px;
@@ -117,4 +117,47 @@ form button {
 
 form button:hover {
     background-color: #e04343;
+}*/
+
+body {
+    background-color: #121212;
+    color: #00aaff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #1e1e1e;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+    nav ul li {
+        display: inline;
+        margin: 0 15px;
+    }
+
+        nav ul li a {
+            color: #00aaff;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+            nav ul li a:hover {
+                text-decoration: underline;
+            }
+
+footer {
+    background-color: #1e1e1e;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
 }

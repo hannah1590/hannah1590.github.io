@@ -40,7 +40,7 @@
 
     <script src="scripts.js"></script>
 </body>
-</html>-->
+</html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -66,5 +66,240 @@
     <footer>
         <p>&copy; 2025 My Name. All Rights Reserved.</p>
     </footer>
+</body>
+</html>>-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Developer Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            color: #E0F7FA;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background-color: #1E1E1E;
+            padding: 20px 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+            nav ul {
+                list-style-type: none;
+                padding: 0;
+                display: flex;
+            }
+
+                nav ul li {
+                    margin-left: 20px;
+                }
+
+        a {
+            color: #4FC3F7;
+            text-decoration: none;
+        }
+
+            a:hover {
+                text-decoration: underline;
+            }
+
+        h1, h2 {
+            color: #4FC3F7;
+        }
+
+        section {
+            padding: 40px 0;
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .project-card {
+            background-color: #1E1E1E;
+            border: 1px solid #4FC3F7;
+            border-radius: 8px;
+            padding: 20px;
+            transition: border-color 0.3s;
+        }
+
+            .project-card:hover {
+                border-color: #81D4FA;
+            }
+
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skill-tag {
+            background-color: #1E1E1E;
+            color: #4FC3F7;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 14px;
+        }
+
+        form {
+            display: grid;
+            gap: 20px;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            background-color: #1E1E1E;
+            border: 1px solid #4FC3F7;
+            color: #E0F7FA;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: #4FC3F7;
+            color: #121212;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+            button:hover {
+                background-color: #81D4FA;
+            }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <a href="#" class="logo">GameDev Portfolio</a>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section id="about">
+            <h2>About Me</h2>
+            <p>
+                I'm a passionate game developer with experience in creating immersive and engaging gaming experiences.
+                With a strong foundation in both game design and programming, I strive to push the boundaries of interactive entertainment.
+            </p>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card" onclick="showProjectDetails(1)">
+                    <h3>Cosmic Crusade</h3>
+                    <p>A space-themed strategy game</p>
+                </div>
+                <div class="project-card" onclick="showProjectDetails(2)">
+                    <h3>Mystic Realms</h3>
+                    <p>An immersive fantasy RPG</p>
+                </div>
+                <div class="project-card" onclick="showProjectDetails(3)">
+                    <h3>Speed Demons</h3>
+                    <p>A high-octane racing game</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="skills-list">
+                <span class="skill-tag">Unity</span>
+                <span class="skill-tag">Unreal Engine</span>
+                <span class="skill-tag">C#</span>
+                <span class="skill-tag">C++</span>
+                <span class="skill-tag">JavaScript</span>
+                <span class="skill-tag">3D Modeling</span>
+                <span class="skill-tag">Animation</span>
+                <span class="skill-tag">Game Design</span>
+                <span class="skill-tag">Level Design</span>
+                <span class="skill-tag">Version Control (Git)</span>
+                <span class="skill-tag">Agile Development</span>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form onsubmit="return false;">
+                <div>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" required>
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div>
+                    <label for="message">Message</label>
+                    <textarea id="message" required></textarea>
+                </div>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <script>
+        const projects = [
+            {
+                id: 1,
+                title: "Cosmic Crusade",
+                description: "A space-themed strategy game",
+                fullDescription: "Cosmic Crusade is an epic space strategy game that challenges players to build and manage their own galactic empire. Set in a vast, procedurally generated universe, players must explore new worlds, research advanced technologies, and engage in tactical combat with alien civilizations. The game features a deep economy system, diplomacy mechanics, and a rich narrative that unfolds based on the player's choices. Developed using Unity and C#, Cosmic Crusade pushes the boundaries of the 4X genre with its stunning visuals and innovative gameplay mechanics."
+            },
+            {
+                id: 2,
+                title: "Mystic Realms",
+                description: "An immersive fantasy RPG",
+                fullDescription: "Mystic Realms is a sprawling open-world fantasy RPG that immerses players in a richly detailed world of magic and adventure. As a fledgling mage, players must master various schools of magic, uncover ancient secrets, and shape the fate of the realm through their choices. The game features a unique spell-crafting system, allowing players to create and customize their own magical abilities. Developed in Unreal Engine with C++, Mystic Realms boasts stunning visuals, a dynamic day-night cycle, and a reactive world that changes based on the player's actions."
+            },
+            {
+                id: 3,
+                title: "Speed Demons",
+                description: "A high-octane racing game",
+                fullDescription: "Speed Demons is an adrenaline-pumping racing game that combines realistic physics with over-the-top action. Set in a near-future world where traditional racing has evolved into high-stakes, weaponized competitions, players must outmaneuver and outgun their opponents to claim victory. The game features a variety of futuristic vehicles, each with unique abilities and customization options. Developed using a custom engine built with C++ and OpenGL, Speed Demons delivers smooth 60 FPS gameplay across a range of hardware, with particular attention paid to responsive controls and spectacular visual effects."
+            },
+        ];
+
+        function showProjectDetails(id) {
+            const project = projects.find(p => p.id === id);
+            if (project) {
+                const mainContent = document.querySelector('main');
+                mainContent.innerHTML = `
+                        <section>
+                            <h1>${project.title}</h1>
+                            <p>${project.fullDescription}</p>
+                            <a href="#projects" onclick="location.reload()">← Back to Projects</a>
+                        </section>
+                    `;
+            }
+        }
+    </script>
 </body>
 </html>

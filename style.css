@@ -162,3 +162,135 @@ footer {
     bottom: 0;
 }
 */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #E0F7FA;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    background-color: #1E1E1E;
+    padding: 20px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+    nav ul li {
+        margin: 0 15px;
+    }
+
+a {
+    color: #4FC3F7;
+    text-decoration: none;
+}
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+h1, h2, h3 {
+    color: #4FC3F7;
+}
+
+main {
+    padding: 40px 20px;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+    .video-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.project-card {
+    background-color: #1E1E1E;
+    border: 1px solid #4FC3F7;
+    border-radius: 8px;
+    padding: 20px;
+    transition: border-color 0.3s;
+}
+
+    .project-card:hover {
+        border-color: #81D4FA;
+    }
+
+.skills-list, .contact-list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+    .skills-list li, .contact-list li {
+        background-color: #1E1E1E;
+        color: #4FC3F7;
+        padding: 5px 10px;
+        border-radius: 20px;
+        font-size: 14px;
+    }
+
+.button {
+    display: inline-block;
+    background-color: #4FC3F7;
+    color: #121212;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+    .button:hover {
+        background-color: #81D4FA;
+        text-decoration: none;
+    }
+
+footer {
+    background-color: #1E1E1E;
+    color: #E0F7FA;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+        nav ul li {
+            margin: 10px 0;
+        }
+}

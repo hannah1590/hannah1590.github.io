@@ -213,7 +213,7 @@ h1, h2 {
 h1 {
     text-align: center;
     font-size: xxx-large;
-    margin: 0%;
+    margin: 2%;
     color: #4FC3F7;
 }
 
@@ -254,6 +254,10 @@ h3 {
         width: 100%;
         height: 100%;
     }
+
+#featured-projects{
+    margin: 3%;
+}
 
 .projects-grid {
     display: grid;
@@ -298,7 +302,7 @@ h3 {
     border-radius: 4px;
     text-decoration: none;
     transition: background-color 0.3s;
-    margin: 2%;
+    margin-top: 2%;
 }
 
     .button:hover {
@@ -323,4 +327,10 @@ footer {
         nav ul li {
             margin: 10px 0;
         }
+}
+
+.project{
+    margin: 2%;
+    padding-top: 2%;
+    text-align: center;
 }

@@ -228,7 +228,11 @@ h3 {
     color: #4FC3F7;
 }
 
-.demo-reel{
+#hero {
+    margin: 1%;
+}
+
+#demo-reel{
     margin: 4%;
 }
 

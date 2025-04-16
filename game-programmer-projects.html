@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Programmer Portfolio - Projects</title>
+    <style>
+        :root {
+            --primary-color: #6d28d9;
+            --secondary-color: #4c1d95;
+            --light-color: #f5f3ff;
+            --dark-color: #1f2937;
+            --success-color: #10b981;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f9fafb;
+            color: var(--dark-color);
+            line-height: 1.6;
+        }
+        
+        header {
+            background-color: var(--dark-color);
+            color: white;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: white;
+            text-decoration: none;
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+        
+        .nav-links li {
+            margin-left: 2rem;
+        }
+        
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .nav-links a:hover {
+            color: var(--primary-color);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        .page-title {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            color: var(--primary-color);
+            text-align: center;
+        }
+        
+        .project-detail {
+            background-color: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            margin-bottom: 3rem;
+            padding: 2rem;
+        }
+        
+        .project-detail h2 {
+            color: var(--secondary-color);
+            margin-bottom: 1rem;
+            font-size: 1.8rem;
+        }
+        
+        .project-detail img {
+            width: 100%;
+            max-height: 500px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin: 1rem 0 2rem;
+        }
+        
+        .project-section {
+            margin-bottom: 1.5rem;
+        }
+        
+        .project-section h3 {
+            margin-bottom: 0.8rem;
+            color: var(--primary-color);
+        }
+        
+        .project-section ul {
+            list-style-position: inside;
+            margin-left: 1rem;
+        }
+        
+        .project-section li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .btn {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s;
+            margin: 0.5rem 0.5rem 0.5rem 0;
+        }
+        
+        .btn:hover {
+            background-color: var(--secondary-color);
+        }
+        
+        .project-nav {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 3rem;
+        }
+        
+        footer {
+            background-color: var(--dark-color);
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 2rem;
+        }
+        
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">GameDev Portfolio</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="demo-reel.html">Demo Reel</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1 class="page-title">My Projects</h1>
+            
+            <section id="project1" class="project-detail">
+                <h2>Physics-Based Platformer</h2>
+                <img src="/api/placeholder/1000/500" alt="Physics-Based Platformer Screenshot">
+                
+                <div class="project-section">
+                    <h3>Project Overview</h3>
+                    <p>This physics-based platformer features a custom-built physics engine that enables realistic movement, momentum, and interaction with dynamic environments. Players navigate through challenging levels where physics puzzles and timing are key to progression.</p>
+                </div>
+                
+                <div class="project-section">
+                    <h3>Technical Highlights</h3>
+                    <ul>
+                        <li>Custom physics engine with realistic collision response</li>
+                        <li>Dynamic terrain deformation and destruction</li>
+                        <li>Particle systems for environmental effects</li>
+                        <li>Optimized for 60+ FPS on various hardware configurations</li>
+                        <li>Adaptive difficulty system based on player performance</li>
+                    </ul>
+                </div>
+                
+                <div class="project-section">
+                    <h3>Development Challenges</h3>
+                    <p>The most significant challenge was creating a physics system that felt responsive to player input while still adhering to realistic physics principles. I implemented a hybrid approach that prioritizes player control during crucial gameplay moments while maintaining physical accuracy during environmental interactions.</p>
+                </div>
+                
+                <div class="project-section">
+                    <h3>My Contribution</h3>
+                    <p>As the sole programmer on this project, I was responsible for all technical aspects including the physics system, game mechanics, level design tools, and performance optimization. I worked closely with an artist to ensure that the visual style complemented the gameplay mechanics.</p>
+                </div>
+                
+                <div>
+                    <a href="#" class="btn">Play Demo</a>
+                    <a href="#" class="btn">View Source Code</a>
+                    <a href="#" class="btn">Development Blog</a>
+                </div>
+            </section>
+            
+            <section id="project2" class="project-detail">
+                <h2>Procedural Dungeon Generator</h2>
+                <img src="/api/placeholder/1000/500" alt="Procedural Dungeon Generator Screenshot">
+                
+                <div class="project-section">
+                    <h3>Project Overview</h3>
+                    <p>This algorithm generates infinite, unique dungeon layouts with interconnected rooms, corridors, and specialized areas. The system uses a combination of cellular automata, binary space partitioning, and graph theory to create dungeons that are both playable and aesthetically coherent.</p>
+                </div>
+                
+                <div class="project-section">
+                    <h3>Technical Highlights</h3>
+                    <ul>
+                        <li>Multi-layered generation algorithm with configurable parameters</li>
+                        <li>Smart enemy and loot placement based on level progression</li>
+                        <li>Theme-based visual element generation (textures, props, lighting)</li>
+                        <li>Guaranteed path completion with optional branching exploration</li>
+                        <li>Runtime generation with minimal performance impact</li>
+                    </ul>
+                </div>
+                
+                <div class="project-section">
+                    <h3>Development Challenges</h3>
+                    <p>Balancing between pure randomness and playability was the core challenge. I implemented constraints that ensure generated levels are always completable while maintaining enough unpredictability to keep gameplay fresh and interesting.</p>
+                </div>
+                
+                <div class="project-section">
+                    <h3>My Contribution</h3>
+                    <p>I developed the entire procedural generation system from scratch, including the algorithm design, implementation, and optimization. I also created an editor extension that allows designers to tweak generation parameters and visualize results in real-time.</p>
+                </div>
+                
+                <div>
+                    <a href="#" class="btn">Interactive Demo</a>
+                    <a href="#" class="btn">View Source Code</a>
+                    <a href="#" class="btn">Technical Documentation</a>
+                </div>
+            </section>
+            
+            <section id="project3" class="project-detail">
+                <h2>Multiplayer Battle Arena</h2>
+                <img src="/api/placeholder/1000/500" alt="Multiplayer Battle Arena Screenshot">
+                
+                <div class="project-section">
+                    <h3>Project Overview</h3>
+                    <p>This fast-paced multiplayer battle arena supports up to 16 players in team-based or free-for-all modes. The game features character classes with unique abilities, dynamic arenas with interactive elements, and a robust networking architecture for seamless gameplay.</p>
+                </div>
+                
+                <div class="project-section">
+                    <h3>Technical Highlights</h3>
+                    <ul>
+                        <li>Client-server architecture with client-side prediction</li>
+                        <li>Lag compensation and reconciliation systems</li>
+                        <li>Scalable matchmaking service</li>
+                        <li>Replay and spectator systems</li>
+                        <li>Cross-platform compatibility (PC, Mac, Linux)</li>
+                    </ul>
+                </div>
+                
+                <div class="project-section">
+                    <h3>Development Challenges</h3>
+                    <p>Network synchronization and providing a fair experience for all players regardless of connection quality was the primary challenge. I implemented a hybrid authoritative server model with client-side prediction to balance responsiveness with security against cheating.</p>
+                </div>
+                
+                <div class="project-section">
+                    <h3>My Contribution</h3>
+                    <p>As the lead programmer on a team of three, I was responsible for the networking architecture, gameplay systems, and server infrastructure. I collaborated with our gameplay designer on balancing and ability implementation, and worked with our UI programmer to ensure responsive user interactions even under varying network conditions.</p>
+                </div>
+                
+                <div>
+                    <a href="#" class="btn">Watch Gameplay</a>
+                    <a href="#" class="btn">Project Documentation</a>
+                    <a href="#" class="btn">Development Timeline</a>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Game Programmer Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

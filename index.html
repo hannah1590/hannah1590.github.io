@@ -12,20 +12,20 @@
             --dark-color: #1f2937;
             --success-color: #10b981;
         }
-        
+
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
-        
+
         body {
             background-color: #f9fafb;
             color: var(--dark-color);
             line-height: 1.6;
         }
-        
+
         header {
             background-color: var(--dark-color);
             color: white;
@@ -35,7 +35,7 @@
             z-index: 100;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
-        
+
         nav {
             max-width: 1200px;
             margin: 0 auto;
@@ -44,43 +44,43 @@
             justify-content: space-between;
             align-items: center;
         }
-        
+
         .logo {
             font-size: 1.5rem;
             font-weight: bold;
             color: white;
             text-decoration: none;
         }
-        
+
         .nav-links {
             display: flex;
             list-style: none;
         }
-        
-        .nav-links li {
-            margin-left: 2rem;
-        }
-        
-        .nav-links a {
-            color: white;
-            text-decoration: none;
-            transition: color 0.3s;
-        }
-        
-        .nav-links a:hover {
-            color: var(--primary-color);
-        }
-        
+
+            .nav-links li {
+                margin-left: 2rem;
+            }
+
+            .nav-links a {
+                color: white;
+                text-decoration: none;
+                transition: color 0.3s;
+            }
+
+                .nav-links a:hover {
+                    color: var(--primary-color);
+                }
+
         .container {
             max-width: 1200px;
             margin: 0 auto;
             padding: 2rem;
         }
-        
+
         section {
             margin-bottom: 4rem;
         }
-        
+
         .section-title {
             font-size: 2rem;
             margin-bottom: 1.5rem;
@@ -88,7 +88,7 @@
             border-bottom: 2px solid var(--primary-color);
             padding-bottom: 0.5rem;
         }
-        
+
         .hero {
             text-align: center;
             padding: 4rem 0;
@@ -96,29 +96,47 @@
             color: white;
             margin-bottom: 3rem;
         }
-        
-        .hero h1 {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-        }
-        
-        .hero p {
-            font-size: 1.25rem;
-            max-width: 800px;
-            margin: 0 auto;
-        }
-        
+
+            .hero h1 {
+                font-size: 3rem;
+                margin-bottom: 1rem;
+            }
+
+            .hero p {
+                font-size: 1.25rem;
+                max-width: 800px;
+                margin: 0 auto;
+            }
+
         .demo-reel {
             margin: 2rem 0;
             text-align: center;
         }
-        
-        .demo-reel video {
-            max-width: 100%;
+
+            .demo-reel video {
+                max-width: 100%;
+                border-radius: 8px;
+                box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            }
+
+        .demo-description {
+            max-width: 800px;
+            margin: 2rem auto;
+            background-color: white;
+            padding: 2rem;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0,0,0,0.1);
         }
-        
+
+        .highlight-list {
+            margin-top: 1rem;
+            list-style-position: inside;
+        }
+
+            .highlight-list li {
+                margin-bottom: 0.5rem;
+            }
+
         .btn {
             display: inline-block;
             background-color: var(--primary-color);
@@ -130,17 +148,17 @@
             transition: background-color 0.3s;
             margin: 0.5rem;
         }
-        
-        .btn:hover {
-            background-color: var(--secondary-color);
-        }
-        
+
+            .btn:hover {
+                background-color: var(--secondary-color);
+            }
+
         .projects-grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
             gap: 2rem;
         }
-        
+
         .project-card {
             background-color: white;
             border-radius: 8px;
@@ -148,112 +166,26 @@
             box-shadow: 0 4px 8px rgba(0,0,0,0.1);
             transition: transform 0.3s;
         }
-        
-        .project-card:hover {
-            transform: translateY(-5px);
-        }
-        
-        .project-card img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-        }
-        
+
+            .project-card:hover {
+                transform: translateY(-5px);
+            }
+
+            .project-card img {
+                width: 100%;
+                height: 200px;
+                object-fit: cover;
+            }
+
         .project-content {
             padding: 1.5rem;
         }
-        
-        .project-content h3 {
-            margin-bottom: 0.5rem;
-            color: var(--secondary-color);
-        }
-        
-        .project-detail {
-            display: flex;
-            flex-direction: column;
-            gap: 2rem;
-            margin-bottom: 4rem;
-        }
-        
-        .project-detail img {
-            max-width: 100%;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-        }
-        
-        .about-content {
-            display: grid;
-            grid-template-columns: 1fr 2fr;
-            gap: 2rem;
-        }
-        
-        .about-image {
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-        }
-        
-        .about-image img {
-            width: 100%;
-            height: auto;
-        }
-        
-        .skills {
-            margin-top: 2rem;
-        }
-        
-        .skills-list {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 1rem;
-        }
-        
-        .skill-tag {
-            background-color: var(--light-color);
-            color: var(--secondary-color);
-            padding: 0.5rem 1rem;
-            border-radius: 20px;
-            font-weight: bold;
-        }
-        
-        .contact-info {
-            background-color: white;
-            padding: 2rem;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            margin-top: 2rem;
-        }
-        
-        .social-links {
-            display: flex;
-            gap: 1rem;
-            margin-top: 1rem;
-        }
-        
-        .social-link {
-            color: var(--secondary-color);
-            font-size: 1.5rem;
-            transition: color 0.3s;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        
-        .social-link:hover {
-            color: var(--primary-color);
-        }
-        
-        .resume-container {
-            text-align: center;
-        }
-        
-        .resume-preview {
-            max-width: 100%;
-            height: 800px;
-            margin: 2rem 0;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-        }
-        
+
+            .project-content h3 {
+                margin-bottom: 0.5rem;
+                color: var(--secondary-color);
+            }
+
         footer {
             background-color: var(--dark-color);
             color: white;
@@ -261,16 +193,12 @@
             padding: 2rem 0;
             margin-top: 4rem;
         }
-        
+
         @media (max-width: 768px) {
-            .about-content {
-                grid-template-columns: 1fr;
-            }
-            
             .projects-grid {
                 grid-template-columns: 1fr;
             }
-            
+
             .nav-links {
                 display: none;
             }
@@ -280,14 +208,12 @@
 <body>
     <header>
         <nav>
-            <a href="index.html" class="logo">GameDev Portfolio</a>
+            <a href="index.html" class="logo">Hannah Fasco's Portfolio</a>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="demo-reel.html">Demo Reel</a></li>
                 <li><a href="projects.html">Projects</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="resume.html">Resume</a></li>
-                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -295,47 +221,63 @@
     <main>
         <div class="hero">
             <div class="container">
-                <h1>Game Programmer & Developer</h1>
-                <p>Turning ideas into interactive experiences through code and creativity</p>
+                <h1>UI and Systems Programmer</h1>
+                <p>Creating fun user experiences is my goal and my passion</p><!-- subtext goes here if I think of some -->
             </div>
         </div>
 
         <div class="container">
-            <section>
-                <h2 class="section-title">Welcome to My Portfolio</h2>
-                <p>Hello and welcome! I'm a professional game programmer specializing in gameplay mechanics, physics simulation, and procedural content generation. This portfolio showcases my best work and technical skills in game development.</p>
-                <p>Feel free to explore my featured projects below or navigate to the specific sections using the menu above.</p>
+            <section id="demo-reel">
+                <h2 class="section-title">Demo Reel</h2>
+
+                <div class="demo-reel">
+                    <!-- Replace with your actual demo reel video -->
+                    <video controls poster="/api/placeholder/800/450" width="800">
+                        <source src="#" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+
+                <div class="demo-description">
+                    <h3>About This Demo Reel</h3>
+                    <p>Demo reel coming soon.</p>
+
+                    <h3>Technical Highlights</h3>
+                    <ul class="highlight-list">
+                        <li>List out the highlights of the demo reel here</li>
+                    </ul>
+                </div>
             </section>
 
-            <section>
+            <section id="featured-projects">
                 <h2 class="section-title">Featured Projects</h2>
                 <div class="projects-grid">
                     <!-- Project 1 -->
                     <div class="project-card">
-                        <img src="/api/placeholder/400/200" alt="Physics-Based Platformer">
+                        <img src="shutterbuds.png" alt="shutterbuds">
                         <div class="project-content">
-                            <h3>Physics-Based Platformer</h3>
-                            <p>A unique platformer game with custom physics engine and dynamic environments.</p>
+                            <h3>shutterbuds</h3>
+                            <p>A multiplayer photography game with a robust quest and camera detection system.</p>
                             <a href="projects.html#project1" class="btn">View Details</a>
                         </div>
                     </div>
-                    
+
                     <!-- Project 2 -->
                     <div class="project-card">
-                        <img src="/api/placeholder/400/200" alt="Procedural Dungeon Generator">
+                        <img src="picross.png" alt="Picross">
                         <div class="project-content">
-                            <h3>Procedural Dungeon Generator</h3>
-                            <p>Algorithm that creates infinite unique dungeon layouts with smart enemy placement.</p>
+                            <h3>Picross</h3>
+                            <p>A picross generator that allows you to upload a photo and play it as a puzzle.</p>
                             <a href="projects.html#project2" class="btn">View Details</a>
                         </div>
                     </div>
-                    
+
                     <!-- Project 3 -->
                     <div class="project-card">
-                        <img src="/api/placeholder/400/200" alt="Multiplayer Battle Arena">
+                        <img src="sudoku.png" alt="Puzzle Collection">
                         <div class="project-content">
-                            <h3>Multiplayer Battle Arena</h3>
-                            <p>Fast-paced online multiplayer game with network synchronization and matchmaking.</p>
+                            <h3>Puzzle Collection</h3>
+                            <p>A collection of puzzle games where each experience is auto-generated.</p>
                             <a href="projects.html#project3" class="btn">View Details</a>
                         </div>
                     </div>
@@ -349,7 +291,7 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2025 Game Programmer Portfolio. All rights reserved.</p>
+            <p>&copy; 2025 Hannah Fasco's Portfolio. All rights reserved.</p>
         </div>
     </footer>
 </body>

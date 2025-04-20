@@ -12,20 +12,20 @@
             --dark-color: #1f2937;
             --success-color: #10b981;
         }
-        
+
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
-        
+
         body {
             background-color: #f9fafb;
             color: var(--dark-color);
             line-height: 1.6;
         }
-        
+
         header {
             background-color: var(--dark-color);
             color: white;
@@ -35,7 +35,7 @@
             z-index: 100;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
-        
+
         nav {
             max-width: 1200px;
             margin: 0 auto;
@@ -44,46 +44,46 @@
             justify-content: space-between;
             align-items: center;
         }
-        
+
         .logo {
             font-size: 1.5rem;
             font-weight: bold;
             color: white;
             text-decoration: none;
         }
-        
+
         .nav-links {
             display: flex;
             list-style: none;
         }
-        
-        .nav-links li {
-            margin-left: 2rem;
-        }
-        
-        .nav-links a {
-            color: white;
-            text-decoration: none;
-            transition: color 0.3s;
-        }
-        
-        .nav-links a:hover {
-            color: var(--primary-color);
-        }
-        
+
+            .nav-links li {
+                margin-left: 2rem;
+            }
+
+            .nav-links a {
+                color: white;
+                text-decoration: none;
+                transition: color 0.3s;
+            }
+
+                .nav-links a:hover {
+                    color: var(--primary-color);
+                }
+
         .container {
             max-width: 1200px;
             margin: 0 auto;
             padding: 2rem;
         }
-        
+
         .page-title {
             font-size: 2.5rem;
             margin-bottom: 2rem;
             color: var(--primary-color);
             text-align: center;
         }
-        
+
         .project-detail {
             background-color: white;
             border-radius: 8px;
@@ -92,39 +92,45 @@
             margin-bottom: 3rem;
             padding: 2rem;
         }
-        
-        .project-detail h2 {
-            color: var(--secondary-color);
-            margin-bottom: 1rem;
-            font-size: 1.8rem;
+
+            .project-detail h2 {
+                color: var(--secondary-color);
+                margin-bottom: 1rem;
+                font-size: 1.8rem;
+            }
+
+            .project-detail img {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 100%;
+                max-height: 500px;
+                
+            }
+
+        #sudoku-image {
+            width: 668px;
+            height: 500px;
         }
-        
-        .project-detail img {
-            width: 100%;
-            max-height: 500px;
-            object-fit: cover;
-            border-radius: 8px;
-            margin: 1rem 0 2rem;
-        }
-        
+
         .project-section {
             margin-bottom: 1.5rem;
         }
-        
-        .project-section h3 {
-            margin-bottom: 0.8rem;
-            color: var(--primary-color);
-        }
-        
-        .project-section ul {
-            list-style-position: inside;
-            margin-left: 1rem;
-        }
-        
-        .project-section li {
-            margin-bottom: 0.5rem;
-        }
-        
+
+            .project-section h3 {
+                margin-bottom: 0.8rem;
+                color: var(--primary-color);
+            }
+
+            .project-section ul {
+                list-style-position: inside;
+                margin-left: 1rem;
+            }
+
+            .project-section li {
+                margin-bottom: 0.5rem;
+            }
+
         .btn {
             display: inline-block;
             background-color: var(--primary-color);
@@ -136,17 +142,33 @@
             transition: background-color 0.3s;
             margin: 0.5rem 0.5rem 0.5rem 0;
         }
-        
-        .btn:hover {
-            background-color: var(--secondary-color);
+
+            .btn:hover {
+                background-color: var(--secondary-color);
+            }
+
+        .btn-steam {
+            background-color: #171a21;
         }
-        
+
+            .btn-steam:hover {
+                background-color: #2a475e;
+            }
+
+        .btn-github {
+            background-color: #24292e;
+        }
+
+            .btn-github:hover {
+                background-color: #404448;
+            }
+
         .project-nav {
             display: flex;
             justify-content: space-between;
             margin-top: 3rem;
         }
-        
+
         footer {
             background-color: var(--dark-color);
             color: white;
@@ -154,7 +176,7 @@
             padding: 2rem 0;
             margin-top: 2rem;
         }
-        
+
         @media (max-width: 768px) {
             .nav-links {
                 display: none;
@@ -165,14 +187,12 @@
 <body>
     <header>
         <nav>
-            <a href="index.html" class="logo">GameDev Portfolio</a>
+            <a href="index.html" class="logo">Hannah Fasco's Portfolio</a>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="demo-reel.html">Demo Reel</a></li>
                 <li><a href="projects.html">Projects</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="resume.html">Resume</a></li>
-                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -180,115 +200,105 @@
     <main>
         <div class="container">
             <h1 class="page-title">My Projects</h1>
-            
+
             <section id="project1" class="project-detail">
-                <h2>Physics-Based Platformer</h2>
-                <img src="/api/placeholder/1000/500" alt="Physics-Based Platformer Screenshot">
-                
+                <h2>shutterbuds</h2>
+                <img src="shutterbuds.png" alt="shutterbuds game art">
+
                 <div class="project-section">
                     <h3>Project Overview</h3>
-                    <p>This physics-based platformer features a custom-built physics engine that enables realistic movement, momentum, and interaction with dynamic environments. Players navigate through challenging levels where physics puzzles and timing are key to progression.</p>
+                    <p>This multiplayer photography games allows players and their friends to explore a beautiful environment and interact with the local fauna. Take pictures of funny creatures and interesting landmarks to fulfill quests and earn rewards.</p>
                 </div>
-                
+
                 <div class="project-section">
                     <h3>Technical Highlights</h3>
                     <ul>
-                        <li>Custom physics engine with realistic collision response</li>
-                        <li>Dynamic terrain deformation and destruction</li>
-                        <li>Particle systems for environmental effects</li>
-                        <li>Optimized for 60+ FPS on various hardware configurations</li>
-                        <li>Adaptive difficulty system based on player performance</li>
+                        <li>Camera detection for storing landmarks and creatures</li>
+                        <li>Additive quest system that easily allows designers to add and change up quest requirements</li>
+                        <li>Fully functioning creature AI</li>
+                        <li>Xbox controller support</li>
+                        <li>Fully networked multiplayer</li>
                     </ul>
                 </div>
-                
+
                 <div class="project-section">
                     <h3>Development Challenges</h3>
-                    <p>The most significant challenge was creating a physics system that felt responsive to player input while still adhering to realistic physics principles. I implemented a hybrid approach that prioritizes player control during crucial gameplay moments while maintaining physical accuracy during environmental interactions.</p>
+                    <p>One of my main challenges early on into the project was developing the camera detection. As it was a core part of our game, it was integral to get exactly right. Making the general raycast for detecting objects was the easy part. Going back and checking if those objects were fully in frame of the camera was the hard part. I ended up making muliple diagrams in MS Paint to help me visualize the camera's frustum and how to know when something is not fully encompassed in it. I ended up comparing the actor's position in terms of the camera's forward vector to the camera's field of view to get the effect I wanted.</p>
                 </div>
-                
+
                 <div class="project-section">
                     <h3>My Contribution</h3>
-                    <p>As the sole programmer on this project, I was responsible for all technical aspects including the physics system, game mechanics, level design tools, and performance optimization. I worked closely with an artist to ensure that the visual style complemented the gameplay mechanics.</p>
+                    <p>As the systems and UI programmer, I contributed almost all UI functionality and a lot of the base systems. The bulk of my work includes the camera detection and the entire quest system and infrastructure. I set up all quest functionality and tied it to camera detection so that whenever a photo is taken, it is able to store that photo's information and check if it fulfills any quest requirements. Additionally, I made all of the diegetic UI, which includes the journal and quest board, in addition to other UI elements like the shop and the HUD. Finally, I implemented controller support for the UI systems, as the diegetic UI didn't work with regular Unreal controller support so I had to improvise by allowing the player to access UI by using their joystick as a mouse cursor.</p>
                 </div>
-                
-                <div>
-                    <a href="#" class="btn">Play Demo</a>
-                    <a href="#" class="btn">View Source Code</a>
-                    <a href="#" class="btn">Development Blog</a>
+
+                <div style="text-align: center; margin-top: 2rem;">
+                    <a href="https://store.steampowered.com/app/3508060/shutterbuds/" class="btn btn-steam">Steam Page</a>
                 </div>
             </section>
-            
+
             <section id="project2" class="project-detail">
-                <h2>Procedural Dungeon Generator</h2>
-                <img src="/api/placeholder/1000/500" alt="Procedural Dungeon Generator Screenshot">
-                
+                <h2>Picross</h2>
+                <img src="picross.png" alt="Picross Screenshot">
+
                 <div class="project-section">
                     <h3>Project Overview</h3>
-                    <p>This algorithm generates infinite, unique dungeon layouts with interconnected rooms, corridors, and specialized areas. The system uses a combination of cellular automata, binary space partitioning, and graph theory to create dungeons that are both playable and aesthetically coherent.</p>
+                    <p>This program allows the user to upload any square photograph and will auto-generate a picross puzzle for it. They can play through the puzzle until it is complete, and then they can upload another picture.</p>
                 </div>
-                
+
                 <div class="project-section">
                     <h3>Technical Highlights</h3>
                     <ul>
-                        <li>Multi-layered generation algorithm with configurable parameters</li>
-                        <li>Smart enemy and loot placement based on level progression</li>
-                        <li>Theme-based visual element generation (textures, props, lighting)</li>
-                        <li>Guaranteed path completion with optional branching exploration</li>
-                        <li>Runtime generation with minimal performance impact</li>
+                        <li>Picross auto-generation</li>
+                        <li>Visually similar to base image</li>
+                        <li>Fully playable puzzle with easy to use controls</li>
                     </ul>
                 </div>
-                
+
                 <div class="project-section">
                     <h3>Development Challenges</h3>
-                    <p>Balancing between pure randomness and playability was the core challenge. I implemented constraints that ensure generated levels are always completable while maintaining enough unpredictability to keep gameplay fresh and interesting.</p>
+                    <p>Limiting the color pallet was the main challenge. I wanted to limit the amount of colors being grabbed so as to not make too complicated a puzzle, so I first found the most frequent colors in the picture. I quickly ran into a problem where a picture that is mainly the same color will have very little changes between each color. I then ended up comparing all frequent colors and if they had similar gray values, I would discard one of them. This lowered the color pool significantly while also keeping the color options diverse to make for a more interesting and fun puzzle.</p>
                 </div>
-                
+
                 <div class="project-section">
                     <h3>My Contribution</h3>
-                    <p>I developed the entire procedural generation system from scratch, including the algorithm design, implementation, and optimization. I also created an editor extension that allows designers to tweak generation parameters and visualize results in real-time.</p>
+                    <p>As this was a solo project, I developed everything myself. I used the assistance of Raylib for drawing onto the screen, but all code is mine</p>
                 </div>
-                
-                <div>
-                    <a href="#" class="btn">Interactive Demo</a>
-                    <a href="#" class="btn">View Source Code</a>
-                    <a href="#" class="btn">Technical Documentation</a>
+
+                <div style="text-align: center; margin-top: 2rem;">
+                    <a href="https://github.com/hannah1590/Picross" class="btn btn-github">GitHub</a>
                 </div>
             </section>
-            
+
             <section id="project3" class="project-detail">
-                <h2>Multiplayer Battle Arena</h2>
-                <img src="/api/placeholder/1000/500" alt="Multiplayer Battle Arena Screenshot">
-                
+                <h2>Puzzle Collection</h2>
+                <img src="sudoku.png" alt="Sudoku Screenshot" id="sudoku-image">
+
                 <div class="project-section">
                     <h3>Project Overview</h3>
-                    <p>This fast-paced multiplayer battle arena supports up to 16 players in team-based or free-for-all modes. The game features character classes with unique abilities, dynamic arenas with interactive elements, and a robust networking architecture for seamless gameplay.</p>
+                    <p>This collection allows users to endlessly play their favorite number puzzles. Each board is randomly generated, so repeated puzzles is exceedingly rare, allowing for a fun and interesting player experience.</p>
                 </div>
-                
+
                 <div class="project-section">
                     <h3>Technical Highlights</h3>
                     <ul>
-                        <li>Client-server architecture with client-side prediction</li>
-                        <li>Lag compensation and reconciliation systems</li>
-                        <li>Scalable matchmaking service</li>
-                        <li>Replay and spectator systems</li>
-                        <li>Cross-platform compatibility (PC, Mac, Linux)</li>
+                        <li>Randomly generated sudoku</li>
+                        <li>Fully playable game with note taking functionality</li>
+                        <li>Difficulity and board size settings</li>
                     </ul>
                 </div>
-                
+
                 <div class="project-section">
                     <h3>Development Challenges</h3>
-                    <p>Network synchronization and providing a fair experience for all players regardless of connection quality was the primary challenge. I implemented a hybrid authoritative server model with client-side prediction to balance responsiveness with security against cheating.</p>
+                    <p>Figuring out the initial sudoku randomizer was very challenging. Just randomly placing numbers would very rarely get a working suoku puzzle, so I ended up going through the steps to see how to program it. I first used an online number generator to get random numbers between 1-9 for an entire 9x9 grid. Then, I would point out the repeats in the rows, columns, and boxes and see how I would swap around or replace numbers to get to a functioning sudoku board. I eventually landed on a method of swapping the repeat in the box with the number in the row that was missing, and then adding that recently swapped location to the stack to go back and check. Eventually, everything was swapped to their correct places to make logical sense for a sudoku board.</p>
                 </div>
-                
+
                 <div class="project-section">
                     <h3>My Contribution</h3>
-                    <p>As the lead programmer on a team of three, I was responsible for the networking architecture, gameplay systems, and server infrastructure. I collaborated with our gameplay designer on balancing and ability implementation, and worked with our UI programmer to ensure responsive user interactions even under varying network conditions.</p>
+                    <p>As this is a personal project, the majority of the code is my own. Since it is an extension of a class project from school, my partner Nate Spielman contributed to certain portions which are commented in the code itself. Additionally, I used a library provided by my teacher, Dean Lawson. All other code not credited in the project is my own.</p>
                 </div>
-                
-                <div>
-                    <a href="#" class="btn">Watch Gameplay</a>
-                    <a href="#" class="btn">Project Documentation</a>
-                    <a href="#" class="btn">Development Timeline</a>
+
+                <div style="text-align: center; margin-top: 2rem;">
+                    <a href="https://github.com/hannah1590/Picross" class="btn btn-github">GitHub</a>
                 </div>
             </section>
         </div>
@@ -296,7 +306,7 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2025 Game Programmer Portfolio. All rights reserved.</p>
+            <p>&copy; 2025 Hannah Fasco's Portfolio. All rights reserved.</p>
         </div>
     </footer>
 </body>

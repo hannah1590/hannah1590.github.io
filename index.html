@@ -129,13 +129,45 @@
         }
 
         .highlight-list {
-            margin-top: 1rem;
-            list-style-position: inside;
+            list-style: none;
+            margin: 0;
+            padding: 0;
         }
 
-            .highlight-list li {
+            .highlight-list > li {
                 margin-bottom: 0.5rem;
+                position: relative;
+                padding-left: 1.5rem; 
             }
+
+                .highlight-list > li:before {
+                    content: '•';
+                    color: var(--primary-color);
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                }
+
+        .sub-highlight-list {
+            list-style: none;
+            margin: 0.3rem 0 0 1rem; 
+            padding: 0;
+        }
+
+            .sub-highlight-list > li {
+                margin-bottom: 0.3rem;
+                position: relative;
+                padding-left: 1.5rem; 
+                font-size: 0.95em; 
+            }
+
+                .sub-highlight-list > li:before {
+                    content: '◦';
+                    color: var(--secondary-color);
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                }
 
         .btn {
             display: inline-block;
@@ -233,18 +265,34 @@
                 <div class="demo-reel">
                     <!-- Replace with your actual demo reel video -->
                     <video controls poster="/api/placeholder/800/450" width="800">
-                        <source src="#" type="video/mp4">
+                        <source src="HannahFasco_SeniorShowReel.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
                 </div>
 
                 <div class="demo-description">
                     <h3>About This Demo Reel</h3>
-                    <p>Demo reel coming soon.</p>
+                    <p>I made this for my senior show where we showed off our capstone games that we've been working on all year. For this reel I focused on my role as a UI and Systems programmer, highlighting my main contributions to the overall project.</p>
 
                     <h3>Technical Highlights</h3>
                     <ul class="highlight-list">
-                        <li>List out the highlights of the demo reel here</li>
+                        <li>Quest System
+                            <ul class="sub-highlight-list">
+                                <li>Fully functional and additive quest system. Easy for designers to add new quests and edit values, such as the reward and level needed to reach.</li>
+                            </ul>
+                        </li>
+                        <li>
+                            Camera Detection
+                            <ul class="sub-highlight-list">
+                                <li>Everything from critters to landmarks gets picked up with the detection. When it is completely in the frame, a UI symbol will appear to let you know that you have properly taken its picture.</li>
+                            </ul>
+                        </li>
+                        <li>
+                            Diegetic UI
+                            <ul class="sub-highlight-list">
+                                <li>Both the quest board and the journal are fully diegetic. Everything is using static meshes with widgets attached so that the player can feel as if they are really in the world while interacting with the magazines and their journal.</li>
+                            </ul>
+                        </li>
                     </ul>
                 </div>
             </section>
